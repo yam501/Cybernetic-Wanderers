@@ -226,3 +226,123 @@ Received Import Request.
 Start importing Assets/_Palettes/Full.png using Guid(66237759228346540bb4a8b96d259c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbef4f84a7e4413cc05e550b763cda1') in 0.174841 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 132.792203 seconds.
+  path: Assets/_Palettes/Full.png
+  artifactKey: Guid(66237759228346540bb4a8b96d259c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full.png using Guid(66237759228346540bb4a8b96d259c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521625d134642349e53ff3ca3b48d4ee') in 0.043274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 71.717452 seconds.
+  path: Assets/_Palettes/Full.png
+  artifactKey: Guid(66237759228346540bb4a8b96d259c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full.png using Guid(66237759228346540bb4a8b96d259c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14be96c1de708033889e428040e9e648') in 0.104723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 19.605336 seconds.
+  path: Assets/_Palettes/BackGround Palette.prefab
+  artifactKey: Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/BackGround Palette.prefab using Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a43698354ca7e6e7274c4bda950773') in 0.134746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 5.001444 seconds.
+  path: Assets/_Palettes/BackGround Palette.prefab
+  artifactKey: Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/BackGround Palette.prefab using Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba1aaa4378bda1ef30ccc70eea6d6ff') in 0.097104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Palettes/Full_1.asset
+  artifactKey: Guid(530d8b2a3c02a6644b3b28f1eb4d3a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_1.asset using Guid(530d8b2a3c02a6644b3b28f1eb4d3a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a285f3d8a57d83446eb638500b44bd2d') in 0.018176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_Palettes/Full_4.asset
+  artifactKey: Guid(f184ee58390cc174fae0b77662efd20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_4.asset using Guid(f184ee58390cc174fae0b77662efd20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159258d353c2cb95f55e708ae7ad9150') in 0.066970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_Palettes/Full_5.asset
+  artifactKey: Guid(7975e741330d43a47af5841943df3b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_5.asset using Guid(7975e741330d43a47af5841943df3b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdd2fcce3b0e85a69ea42ffa38fa829') in 0.046672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Palettes/Full_7.asset
+  artifactKey: Guid(bf5cf90d16afe3e478a227eb05ac1f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_7.asset using Guid(bf5cf90d16afe3e478a227eb05ac1f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57902b6607aca76faf21f080630bcb8') in 0.034286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_Palettes/Full_3.asset
+  artifactKey: Guid(e7a0cada58b13af4d81bf07e0de2f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_3.asset using Guid(e7a0cada58b13af4d81bf07e0de2f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14318eb24907fc85c47d53d7c70426fc') in 0.053313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/_Palettes/Full_0.asset
+  artifactKey: Guid(2365deac3a3a4284b9f3909b41764e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_0.asset using Guid(2365deac3a3a4284b9f3909b41764e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700569787028feaf4ebc4af3402a482c') in 0.031192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_Palettes/Full_2.asset
+  artifactKey: Guid(336ab3118580ed4408eb2377348d51bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_2.asset using Guid(336ab3118580ed4408eb2377348d51bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a371567468f5c370e76aca6ec62c8b06') in 0.063729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001637 seconds.
+  path: Assets/_Palettes/Full_9.asset
+  artifactKey: Guid(f035cf522c0090141809a9e529aacc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_9.asset using Guid(f035cf522c0090141809a9e529aacc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dacc715dde0a71fc94131f32f858737') in 0.034400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_Palettes/Full_8.asset
+  artifactKey: Guid(2a53a22236dab6a469e184b7f75255c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_8.asset using Guid(2a53a22236dab6a469e184b7f75255c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2161588d038ffa619f434c17ad28560') in 0.030687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_Palettes/Full_6.asset
+  artifactKey: Guid(50f4cb719e2872840b18521244e420e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/Full_6.asset using Guid(50f4cb719e2872840b18521244e420e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99df72628947b354aeef96652252f143') in 0.030418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 58.421975 seconds.
+  path: Assets/_Palettes/BackGround Palette.prefab
+  artifactKey: Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Palettes/BackGround Palette.prefab using Guid(b48f240052eed494e8ef47b22d52b2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cdf9894339286904ce8ba335b0c1332') in 0.025076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
