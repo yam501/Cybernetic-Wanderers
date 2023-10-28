@@ -14,7 +14,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Ll]ogs/
+Logs/
 /[Uu]ser[Ss]ettings/
 # file on crash reports
 sysinfo.txt
