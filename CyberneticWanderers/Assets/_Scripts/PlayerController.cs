@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
     Rigidbody2D rb;
-    Vector2 moveDir;
+    public Vector2 moveDir;
     public SpriteRenderer playerSprite;
 
     private void Start()
@@ -23,11 +23,11 @@ public class PlayerController : MonoBehaviour
     {
         InputManager();      
 
-       //if(Input.GetAxis("Horizontal") < 0)         //влево
+       //if(Input.GetAxis("Horizontal") < 0)         //пїЅпїЅпїЅпїЅпїЅ
        //{
        //    playerSprite.flipX = true;
        // }
-       // if (Input.GetAxis("Horizontal") > 0)   //вправо
+       // if (Input.GetAxis("Horizontal") > 0)   //пїЅпїЅпїЅпїЅпїЅпїЅ
        // {
        //     playerSprite.flipX = false;
        // }
