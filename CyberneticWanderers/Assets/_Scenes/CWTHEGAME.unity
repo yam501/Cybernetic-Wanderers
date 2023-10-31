@@ -300,36 +300,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1610917701}
-  - component: {fileID: 1610917700}
-  m_Layer: 0
-  m_Name: MapController
+  - component: {fileID: 1610917702}
+  m_Layer: 6
+  m_Name: Map Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1610917700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610917699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba021706907d2664287e26d63a3c0cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  terrainChunks:
-  - {fileID: 8616463547304147362, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
-  - {fileID: 8616463547304147362, guid: b4269dc154d3d864fbcd9e1de98d125a, type: 3}
-  - {fileID: 8616463547304147362, guid: ecf90479564988d498212c81f0d9c4b4, type: 3}
-  player: {fileID: 2007393056}
-  checkerRadius: 0.2
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 64
-  currentChunk: {fileID: 0}
 --- !u!4 &1610917701
 Transform:
   m_ObjectHideFlags: 0
@@ -345,6 +323,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610917702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610917699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba021706907d2664287e26d63a3c0cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundChunks:
+  - {fileID: 8616463547304147362, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+  - {fileID: 8616463547304147362, guid: 25ce56bef7f692142a125167622fee9c, type: 3}
+  - {fileID: 8616463547304147362, guid: 9709c0a757b4fd944a433663ecfef42b, type: 3}
+  player: {fileID: 2007393056}
+  checkerRadius: 0.2
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  currentChunck: {fileID: 0}
 --- !u!1 &1644243948
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,14 +700,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1295261391701367015, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
-      propertyPath: m_Name
-      value: Right Up
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406558805192688982, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
-      propertyPath: m_Name
-      value: Left Up
-      objectReference: {fileID: 0}
     - target: {fileID: 3095287657417658373, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -748,20 +740,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6470862504578035053, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
-      propertyPath: m_Name
-      value: Right Down
-      objectReference: {fileID: 0}
-    - target: {fileID: 8111743803647118737, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
-      propertyPath: m_Name
-      value: Left Down
-      objectReference: {fileID: 0}
     - target: {fileID: 8616463547304147362, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
       propertyPath: m_Name
       value: Ground Chunk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 144721202302029014, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 6798967458353311758, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 8111743803647118737, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 1406558805192688982, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 771360431091481825, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 6470862504578035053, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 1295261391701367015, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 4086389232161411935, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+    - {fileID: 7627825794380828334, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
