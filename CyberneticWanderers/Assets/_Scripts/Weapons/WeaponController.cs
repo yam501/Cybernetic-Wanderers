@@ -11,14 +11,16 @@ public class WeaponController : MonoBehaviour
     public float damage, speed, cooldownDuration;
     public int pierce;
     float currentCooldown;
+    protected PlayerMovement pm;
     
 
-    void Start()
+    protected virtual void Start()
     {
+        pm = FindObjectOfType<PlayerMovement>();
         currentCooldown = cooldownDuration;
     }
 
-    void Update()
+    protected virtual void Update()
     {
         currentCooldown -= Time.deltaTime;
         if (currentCooldown <= 0f)
@@ -27,7 +29,7 @@ public class WeaponController : MonoBehaviour
         }
     }
 
-    void Attack()
+    protected virtual void Attack()
     {
         currentCooldown = cooldownDuration;
     }
