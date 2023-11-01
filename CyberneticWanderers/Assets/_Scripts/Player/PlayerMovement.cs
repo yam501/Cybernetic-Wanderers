@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public float lastVerticalVector;
     public SpriteRenderer playerSprite;
 
+    [Header("Аниматор игрока")]
+    public Animator animator;
+
     private void Start()
     {
         playerRB = GetComponent<Rigidbody2D>(); 
@@ -42,6 +45,9 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDir = new Vector2(moveX, moveY);
+
+        animator.SetBool("isMoving", (Mathf.Abs(moveX) > 0 || Mathf.Abs(moveY) > 0) ? true : false);
+        animator.SetFloat("directionX", moveX);
 
         if (moveDir.x != 0)
         {
