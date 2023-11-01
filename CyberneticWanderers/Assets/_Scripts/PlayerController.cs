@@ -9,28 +9,30 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
     Rigidbody2D rb;
-    public Vector2 moveDir;
+    [HideInInspector] public Vector2 moveDir;
     public SpriteRenderer playerSprite;
+    [HideInInspector] public float lastHorizontalVector;
+    [HideInInspector] public float lastVerticalVector;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
         playerSprite = GetComponent<SpriteRenderer>();
     }
 
-    
+
     void Update()
     {
-        InputManager();      
+        InputManager();
 
-       //if(Input.GetAxis("Horizontal") < 0)         //�����
-       //{
-       //    playerSprite.flipX = true;
-       // }
-       // if (Input.GetAxis("Horizontal") > 0)   //������
-       // {
-       //     playerSprite.flipX = false;
-       // }
+        //if(Input.GetAxis("Horizontal") < 0)         //�����
+        //{
+        //    playerSprite.flipX = true;
+        // }
+        // if (Input.GetAxis("Horizontal") > 0)   //������
+        // {
+        //     playerSprite.flipX = false;
+        // }
     }
 
     private void FixedUpdate()
@@ -45,6 +47,16 @@ public class PlayerController : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDir = new Vector2(moveX, moveY);
+
+        if (moveDir.x != 0)
+        {
+            lastHorizontalVector = moveDir.x;
+        }
+
+        if (moveDir.y != 0)
+        {
+            lastVerticalVector = moveDir.y;
+        }
     }
 
     void Move()

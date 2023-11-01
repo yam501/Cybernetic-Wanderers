@@ -340,7 +340,7 @@ MonoBehaviour:
   - {fileID: 8616463547304147362, guid: 25ce56bef7f692142a125167622fee9c, type: 3}
   - {fileID: 8616463547304147362, guid: 9709c0a757b4fd944a433663ecfef42b, type: 3}
   player: {fileID: 2007393056}
-  checkerRadius: 0.2
+  checkerRadius: 0
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -613,6 +613,8 @@ MonoBehaviour:
   moveSpeed: 5
   moveDir: {x: 0, y: 0}
   playerSprite: {fileID: 0}
+  lastHorizontalVector: 0
+  lastVerticalVector: 0
 --- !u!212 &2007393059
 SpriteRenderer:
   m_ObjectHideFlags: 0
