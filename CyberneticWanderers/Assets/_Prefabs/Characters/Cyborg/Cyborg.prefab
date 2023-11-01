@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1039994411
       objectReference: {fileID: 0}
+    - target: {fileID: 7198560575695053587, guid: cc0a2b9426fe05f4cb19af1d0eb38a4c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3cea5c67f9fe5742a59c9020ac03c9e, type: 2}
     - target: {fileID: 7690961105721131274, guid: cc0a2b9426fe05f4cb19af1d0eb38a4c, type: 3}
       propertyPath: m_Name
       value: Cyborg
@@ -42,11 +46,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7733508753767155433, guid: cc0a2b9426fe05f4cb19af1d0eb38a4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.491
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7733508753767155433, guid: cc0a2b9426fe05f4cb19af1d0eb38a4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7733508753767155433, guid: cc0a2b9426fe05f4cb19af1d0eb38a4c, type: 3}
       propertyPath: m_LocalPosition.z
