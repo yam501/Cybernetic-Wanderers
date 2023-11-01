@@ -10,11 +10,11 @@ public class MapController : MonoBehaviour
     Vector3 noGroundPositions;
     public LayerMask groundMask;
     public GameObject currentChunck;
-    private PlayerController pc;
+    private PlayerMovement pc;
     
     void Start()
     {
-        pc = FindObjectOfType<PlayerController>();
+        pc = FindObjectOfType<PlayerMovement>();
     }
 
    
@@ -25,6 +25,7 @@ public class MapController : MonoBehaviour
 
     void ChunkChecker()
     {
+        Debug.Log(currentChunck);
 
         if (!currentChunck)
         {
