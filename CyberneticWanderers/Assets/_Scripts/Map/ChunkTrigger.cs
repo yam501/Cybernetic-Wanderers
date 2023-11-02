@@ -17,7 +17,6 @@ public class ChunkTrigger : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        Debug.Log("OnTriggerStay!");
         if (col.CompareTag("Player"))
         {
             mc.currentChunck = targetMap;
@@ -26,8 +25,7 @@ public class ChunkTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        Debug.Log("OnTriggerStay!");
-
+        
         if (col.CompareTag("Player"))
         {
             if (mc.currentChunck == targetMap)

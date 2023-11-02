@@ -10,29 +10,34 @@ public class MapController : MonoBehaviour
     Vector3 noGroundPositions;
     public LayerMask groundMask;
     public GameObject currentChunck;
-    private PlayerMovement pc;
-    
+    private PlayerMovement pm;
+    [Header("Optimization")] public List<GameObject> spawnedChunks;
+    GameObject latestChunk;
+    public float maxOpDist;
+    float opDist; 
+    float opCooldown;
+    public float optCoolddownDur;
     void Start()
     {
-        pc = FindObjectOfType<PlayerMovement>();
+        pm = FindObjectOfType<PlayerMovement>();
     }
 
    
     void Update()
     {
         ChunkChecker();
+        ChunkOptimization();
     }
 
     void ChunkChecker()
     {
-        Debug.Log(currentChunck);
-
+        
         if (!currentChunck)
         {
             return;
         }
         
-        if (pc.moveDir.x > 0 && pc.moveDir.y == 0) //right
+        if (pm.moveDir.x > 0 && pm.moveDir.y == 0) //right
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Right").position, checkerRadius, groundMask))
             {
@@ -40,7 +45,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x < 0 && pc.moveDir.y == 0) //left
+        else if (pm.moveDir.x < 0 && pm.moveDir.y == 0) //left
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Left").position, checkerRadius, groundMask))
             {
@@ -48,7 +53,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x == 0 && pc.moveDir.y > 0) //up
+        else if (pm.moveDir.x == 0 && pm.moveDir.y > 0) //up
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Up").position, checkerRadius, groundMask))
             {
@@ -56,7 +61,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x == 0 && pc.moveDir.y < 0) //down
+        else if (pm.moveDir.x == 0 && pm.moveDir.y < 0) //down
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Down").position, checkerRadius, groundMask))
             {
@@ -64,7 +69,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x > 0 && pc.moveDir.y > 0) //right up
+        else if (pm.moveDir.x > 0 && pm.moveDir.y > 0) //right up
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Right Up").position, checkerRadius, groundMask))
             {
@@ -72,7 +77,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x > 0 && pc.moveDir.y < 0) //right down
+        else if (pm.moveDir.x > 0 && pm.moveDir.y < 0) //right down
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Right Down").position, checkerRadius, groundMask))
             {
@@ -80,7 +85,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x < 0 && pc.moveDir.y > 0) //left up
+        else if (pm.moveDir.x < 0 && pm.moveDir.y > 0) //left up
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Left Up").position, checkerRadius, groundMask))
             {
@@ -88,7 +93,7 @@ public class MapController : MonoBehaviour
                 SpawnChunck();
             }
         }
-        else if (pc.moveDir.x < 0 && pc.moveDir.y < 0) //left down
+        else if (pm.moveDir.x < 0 && pm.moveDir.y < 0) //left down
         {
             if (!Physics2D.OverlapCircle(currentChunck.transform.Find("Left Down").position, checkerRadius, groundMask))
             {
@@ -101,6 +106,34 @@ public class MapController : MonoBehaviour
     void SpawnChunck()
     {
         int rand = Random.Range(0, groundChunks.Count);
-        Instantiate(groundChunks[rand], noGroundPositions, Quaternion.identity);
+        latestChunk =  Instantiate(groundChunks[rand], noGroundPositions, Quaternion.identity);
+        spawnedChunks.Add(latestChunk);
+    }
+
+    void ChunkOptimization()
+    {
+        optCoolddownDur -= Time.deltaTime;
+
+        if (opCooldown <= 0f)
+        {
+            opCooldown = optCoolddownDur;
+        }
+        else
+        {
+            return;
+        }
+
+        foreach (GameObject chunk in spawnedChunks)
+        {
+            opDist = Vector3.Distance(player.transform.position, chunk.transform.position);
+            if (opDist > maxOpDist)
+            {
+                chunk.SetActive(false);
+            }
+            else
+            {
+                chunk.SetActive(true);
+            }
+        }
     }
 }
