@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Rat Enemy
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHealth: 10
+  maxHealth: 15
   damage: 0
