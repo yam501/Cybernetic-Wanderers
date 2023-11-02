@@ -248,7 +248,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6676540523963899463, guid: 45902565adf7ca44dbcedf8fc29b1b15, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8238403580664805904, guid: 45902565adf7ca44dbcedf8fc29b1b15, type: 3}
       propertyPath: m_Name
@@ -583,9 +583,10 @@ MonoBehaviour:
   - {fileID: 117864638}
   - {fileID: 1917667659}
   propPrefab:
-  - {fileID: 7514795223624617380, guid: 6cdfc87abebedcb41acffe52285493c2, type: 3}
+  - {fileID: 7543223611648718835, guid: 66e22ee205eb2fd4795a93032ab208fc, type: 3}
   - {fileID: 977534070387346979, guid: c84cd55f4bd8d35408494a0605818591, type: 3}
-  - {fileID: 5621169210772101312, guid: 122a613d1fb45fe4c9c7e7a1a4703cec, type: 3}
+  - {fileID: 428478581725121447, guid: aa6738a573165864e918783c83f30ebb, type: 3}
+  - {fileID: 2108670247287224265, guid: 09e88209bce51c24b880303330533867, type: 3}
 --- !u!61 &1187979794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -719,7 +720,7 @@ Transform:
   m_GameObject: {fileID: 1251390539}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -7.6077094, y: 1.881776, z: 8.993775}
+  m_LocalPosition: {x: 1.16, y: 1.54, z: 14.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5150,6 +5151,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   currentChunck: {fileID: 8616463547304147362, guid: 024659e8981fafa4c958c7463670f1b0, type: 3}
+  spawnedChunks:
+  - {fileID: 0}
+  maxOpDist: 50
+  optCoolddownDur: 1
 --- !u!4 &1663096592
 Transform:
   m_ObjectHideFlags: 0
@@ -5447,7 +5452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32bd7373f8f6d447ab5302e8486aa5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 10
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
   lastHorizontalVector: 0
