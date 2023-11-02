@@ -18,8 +18,6 @@ public class ProjectileWeaponBehavior : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log(weaponData);
-
         currentDamage = weaponData.Damage;
         currentSpeed = weaponData.Speed;
         currentCooldownDuration = weaponData.CooldownDuration;
