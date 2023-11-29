@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 20f;
-    Rigidbody2D playerRB;
     public Vector2 moveDir;
     [HideInInspector]
     public Vector2 lastMovedVector; 
@@ -18,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
     public float lastVerticalVector;
     public SpriteRenderer playerSprite;
 
+    Rigidbody2D playerRB;
+    public CharacterScriptableObject characterData;
+    
+    
     [Header("Аниматор игрока")]
     public Animator animator;
 
@@ -68,6 +70,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        playerRB.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
+        playerRB.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
     }
 }
