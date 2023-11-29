@@ -5,9 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54266be6-c2af-4e4b-b535-db6b3636daa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Prefabs/Pick-ups.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Prefabs/Pick-ups/Level_gem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Prefabs/Pick-ups/Level_gem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Characters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Characters/Knife Character.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Characters/Knife Character.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Enemies/Rat Enemy.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Enemies/Rat Enemy.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Weapons/Garlic Weapon.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Weapons/Garlic Weapon.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Weapons/Knife Weapon.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ScriptableObject/Weapons/Knife Weapon.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/DropRateManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/DropRateManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interfaces/iCollectible.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interfaces/iCollectible.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Pick-ups.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Pick-ups/ExpGem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Pick-ups/ExpGem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/CharacterScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/CharacterScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerCollector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerCollector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStats.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CyberneticWanderers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CyberneticWanderers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/CWTHEGAME.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/CWTHEGAME.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Enemies/Rat Enemy.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Enemies/Rat Enemy.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Weapons/Garlic Weapon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Weapons/Garlic Weapon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Weapons/Knife Weapon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Weapons/Knife Weapon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Enemies/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Enemies/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/bigstand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/bigstand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Props/prop4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/smallstand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Props/smallstand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy/EnemyStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Base/MeleeWeaponBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Base/MeleeWeaponBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Base/ProjectileWeaponBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Base/ProjectileWeaponBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Behavior/GarlcBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon Behavior/GarlcBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +69,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/ChunkTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/MapController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/BreakableProps.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/DropRateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Interfaces/ICollectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pick-ups/ExpGem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Player/PlayerCollector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnGUI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -110,6 +164,7 @@
       <workItem from="1698855497124" duration="2608000" />
       <workItem from="1698912819694" duration="3069000" />
       <workItem from="1698919598665" duration="89000" />
+      <workItem from="1701255939751" duration="14247000" />
     </task>
     <servers />
   </component>

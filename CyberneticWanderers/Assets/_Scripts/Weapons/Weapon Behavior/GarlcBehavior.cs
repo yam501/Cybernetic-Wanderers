@@ -21,5 +21,14 @@ public class GarlcBehavior : MeleeWeaponBehavior
 
             markedEnemies.Add(col.gameObject); //Пометить врага чтобы не наносить урон сразу несколько раз
         }
+        else if (col.CompareTag("Prop"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
+            {
+                breakable.TakeDamage(currentDamage);
+                
+                markedEnemies.Add(col.gameObject);
+            }
+        }
     }
 }

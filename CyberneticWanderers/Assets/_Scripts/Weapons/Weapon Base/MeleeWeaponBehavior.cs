@@ -29,7 +29,17 @@ public class MeleeWeaponBehavior : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D col)
     {
-        EnemyStats enemy = col.GetComponent<EnemyStats>();
-        enemy.TakeDamage(currentDamage);
+        if (col.CompareTag("Enemy"))
+        {
+            EnemyStats enemy = col.GetComponent<EnemyStats>();
+            enemy.TakeDamage(currentDamage);
+        }
+        else if (col.CompareTag("Prop"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable))
+            {
+                breakable.TakeDamage(currentDamage);
+            }
+        }
     }
 }
