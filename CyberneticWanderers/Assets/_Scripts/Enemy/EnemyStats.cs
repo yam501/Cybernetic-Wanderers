@@ -6,11 +6,10 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    private Rigidbody2D rb;
     public EnemyScriptableObject enemyData;
-    float currentMoveSpeed;
-    float currentHealth;
-    float currentDamage;
+    [HideInInspector] public float currentMoveSpeed;
+    [HideInInspector] public float currentHealth;
+    [HideInInspector] public float currentDamage;
 
     void Awake()
     {
@@ -18,13 +17,7 @@ public class EnemyStats : MonoBehaviour
         currentHealth = enemyData.MaxHealth;
         currentDamage = enemyData.Damage;
     }
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true;
-    }
-
+    
     public void TakeDamage(float dmg)
     {
         currentHealth -= dmg;

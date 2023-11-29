@@ -17,14 +17,14 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer playerSprite;
 
     Rigidbody2D playerRB;
-    public CharacterScriptableObject characterData;
-    
+    private PlayerStats player;
     
     [Header("Аниматор игрока")]
     public Animator animator;
 
     private void Start()
     {
+        player = GetComponent<PlayerStats>();
         playerRB = GetComponent<Rigidbody2D>(); 
         playerSprite = GetComponent<SpriteRenderer>();
         lastMovedVector = new Vector2(1, 0f);
@@ -70,6 +70,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        playerRB.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
+        playerRB.velocity = new Vector2(moveDir.x * player.currentMoveSpeed, moveDir.y * player.currentMoveSpeed);
     }
 }
