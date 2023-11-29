@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
@@ -12,6 +9,9 @@ public class EnemyStats : MonoBehaviour
     float currentHealth;
     float currentDamage;
 
+    public float despawnDistance = 20f;
+    Transform player;
+
     void Awake()
     {
         currentMoveSpeed = enemyData.MoveSpeed;
@@ -21,8 +21,15 @@ public class EnemyStats : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true;
+        player = FindObjectOfType<PlayerStats>().transform;
+    }
+
+    private void Update()
+    {
+        if (Vector2.Distance(transform.position, player.position)>= despawnDistance)
+        {
+            ReturnEnemy(); 
+        }
     }
 
     public void TakeDamage(float dmg)
@@ -47,5 +54,17 @@ public class EnemyStats : MonoBehaviour
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
             player.TakeDamage(currentDamage);
         }
+    }
+
+    private void OnDestroy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        es.OnEnemyKill();
+    }
+
+    void ReturnEnemy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        transform.position = player.position + es.relativeSpawnPoints[UnityEngine.Random.Range(0, es.relativeSpawnPoints.Count)].position;
     }
 }

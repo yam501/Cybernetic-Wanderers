@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 5915995054871094446}
   - component: {fileID: 8971049952758019417}
   - component: {fileID: -859527209258136413}
+  - component: {fileID: 1223246557302258727}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,3 +198,30 @@ MonoBehaviour:
   - name: Blue gem
     itemPrefab: {fileID: 9067012371069953986, guid: 711e10c7e632ee74f8ecbca9a8892160, type: 3}
     dropRate: 50
+--- !u!50 &1223246557302258727
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620204721980338216}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

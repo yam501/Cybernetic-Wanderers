@@ -99,12 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32bd7373f8f6d447ab5302e8486aa5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
   playerSprite: {fileID: 0}
+  characterData: {fileID: 0}
   animator: {fileID: 5985259183274280053}
 --- !u!50 &1261960138545687767
 Rigidbody2D:
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &5985259183274280053
 Animator:
   serializedVersion: 5
