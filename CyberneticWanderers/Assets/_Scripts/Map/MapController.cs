@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MapController : MonoBehaviour
@@ -105,7 +107,7 @@ public class MapController : MonoBehaviour
 
     void SpawnChunck()
     {
-        int rand = Random.Range(0, groundChunks.Count);
+        int rand = UnityEngine.Random.Range(0, groundChunks.Count);
         latestChunk =  Instantiate(groundChunks[rand], noGroundPositions, Quaternion.identity);
         spawnedChunks.Add(latestChunk);
     }
@@ -123,17 +125,25 @@ public class MapController : MonoBehaviour
             return;
         }
 
-        foreach (GameObject chunk in spawnedChunks)
+        try
         {
-            opDist = Vector3.Distance(player.transform.position, chunk.transform.position);
-            if (opDist > maxOpDist)
+            foreach (GameObject chunk in spawnedChunks)
             {
-                chunk.SetActive(false);
-            }
-            else
-            {
-                chunk.SetActive(true);
+                opDist = Vector3.Distance(player.transform.position, chunk.transform.position);
+                if (opDist > maxOpDist)
+                {
+                    chunk.SetActive(false);
+                }
+                else
+                {
+                    chunk.SetActive(true);
+                }
             }
         }
+        catch (Exception e) 
+        {
+
+        }
+        
     }
 }
