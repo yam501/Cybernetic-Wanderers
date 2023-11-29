@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,17 +15,30 @@ public class GameManager : MonoBehaviour
 
     public GameState currentState, previousState;
 
-    [Header("UI")]
+    [Header("Screens")]
     public GameObject pauseScreen;
     public GameObject resultScreen;
 
-    //Current stats
+    [Header("Current Stat Display")]
     public TextMeshProUGUI currentHealthDisplay;
     public TextMeshProUGUI currentRecoveryDisplay;
     public TextMeshProUGUI currentMoveSpeedDisplay;
     public TextMeshProUGUI currentMightDisplay;
     public TextMeshProUGUI currentProjectileSpeedDisplay;
     public TextMeshProUGUI currentMagnetDisplay;
+
+    [Header("Results Screen Displays")]
+    public Image chosenCharacterImage;
+    public TextMeshProUGUI chosenCharacterName;
+    public TextMeshProUGUI levelReachedDisplay;
+    public TextMeshProUGUI timeSurvivedDisplay;
+    public List<Image> chosenWeaponUI = new List<Image>(6);
+    public List<Image> chosenPassiveItemUI = new List<Image>(6);
+
+    [Header("Stopwatch")]
+    public float timeLimit;
+    float stopwatchTime;
+    public TextMeshProUGUI stopwatchDisplay;
 
     public bool isGameOver = false;
 
@@ -39,6 +53,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.Gameplay:
                 CheckForPauseAndResume();
+                UpdateStopwatch();
                 break;
 
             case GameState.Paused:
@@ -106,7 +121,7 @@ public class GameManager : MonoBehaviour
     void DisableScreens()
     {
         pauseScreen.SetActive(false);
-        resultScreen.SetActive(false);  
+        //resultScreen.SetActive(false);  
     }
 
     public void GameOver()
@@ -116,6 +131,24 @@ public class GameManager : MonoBehaviour
 
     void DiplayResults()
     {
+        timeSurvivedDisplay.text = stopwatchDisplay.text;
         resultScreen.SetActive(true);
+    }
+
+    private void UpdateStopwatch()
+    {
+        stopwatchTime += Time.deltaTime;
+        UpdateStopwatchDisplay();
+
+        if (stopwatchTime >= timeLimit)
+        {
+            GameOver();
+        }
+    }
+
+    void UpdateStopwatchDisplay()
+    {
+        int minutes = Mathf.FloorToInt(stopwatchTime / 60), seconds = Mathf.FloorToInt(stopwatchTime % 60);
+        stopwatchDisplay.text = string.Format("{0:00}:{1:00}",minutes,seconds);
     }
 }
