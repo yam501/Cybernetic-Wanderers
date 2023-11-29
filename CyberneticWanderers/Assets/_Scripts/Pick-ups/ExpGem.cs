@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExpGem : MonoBehaviour, ICollectible
+public class ExpGem : Pickup, ICollectible
 {
     public int expGranted;
     
@@ -10,6 +11,5 @@ public class ExpGem : MonoBehaviour, ICollectible
     {
         PlayerStats player = FindObjectOfType<PlayerStats>();
         player.IncreaseExp(expGranted);
-        Destroy(gameObject);
     }
 }

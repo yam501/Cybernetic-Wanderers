@@ -3,11 +3,10 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    private Rigidbody2D rb;
     public EnemyScriptableObject enemyData;
-    float currentMoveSpeed;
-    float currentHealth;
-    float currentDamage;
+    [HideInInspector] public float currentMoveSpeed;
+    [HideInInspector] public float currentHealth;
+    [HideInInspector] public float currentDamage;
 
     public float despawnDistance = 20f;
     Transform player;
