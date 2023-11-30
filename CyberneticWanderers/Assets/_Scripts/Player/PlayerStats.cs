@@ -211,6 +211,8 @@ public class PlayerStats : MonoBehaviour
             }
 
             expCap += expCapIncrease;
+
+            GameManager.instance.StartLevelUp();
         }
     }
 
