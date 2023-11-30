@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5fe84358e9bffa408c9f46be5ab272d, type: 3}
-  m_Name: Knife Weapon
+  m_Script: {fileID: 11500000, guid: 9e64a6027f9c0594b893c0288a099d75, type: 3}
+  m_Name: Shpine oassive item
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7435585494104287273, guid: abc776a87de46d9499772d68fe7fee08, type: 3}
-  damage: 5
-  cooldownDuration: 2
-  speed: 20
-  pierce: 1
+  multipler: 100
+  level: 1
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 23a474b0e09b83545904f9c3ce359749, type: 3}

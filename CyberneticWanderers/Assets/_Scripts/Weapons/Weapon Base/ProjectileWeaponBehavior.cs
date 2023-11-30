@@ -38,7 +38,7 @@ public class ProjectileWeaponBehavior : MonoBehaviour
     {
         direction = dir;
 
-        //Нахождение угла полёта снаряда, для каждого префаба нужно найти spriteAngleOffset - угол отклонения
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ spriteAngleOffset - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         angle += spriteAngleOffset;
         transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -49,14 +49,14 @@ public class ProjectileWeaponBehavior : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            enemy.TakeDamage(GetCurrentDamage());
             ReducePierce();
         }
         else if(col.CompareTag("Prop"))
         {
             if (col.gameObject.TryGetComponent(out BreakableProps breakable))
             {
-                breakable.TakeDamage(currentDamage);
+                breakable.TakeDamage(GetCurrentDamage());
                 ReducePierce();
             }
         }
