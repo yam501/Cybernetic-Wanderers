@@ -22,6 +22,11 @@ public class MeleeWeaponBehavior : MonoBehaviour
         currentCooldownDuration = weaponData.CooldownDuration;
     }
 
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindObjectOfType<PlayerStats>().CurrentMight;
+    }
+
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);

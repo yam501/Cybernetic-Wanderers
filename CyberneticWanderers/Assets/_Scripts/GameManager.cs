@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
+
     public enum GameState
     { 
         Gameplay,
@@ -44,6 +47,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         DisableScreens();
     }
 
@@ -64,8 +76,9 @@ public class GameManager : MonoBehaviour
                 if (!isGameOver)
                 {
                     isGameOver = true;
+                    Time.timeScale = 0f;
                     Debug.Log("Game over");
-                    //DisplayResults();
+                    DisplayResults();
                 }
                 break;
 
@@ -121,7 +134,7 @@ public class GameManager : MonoBehaviour
     void DisableScreens()
     {
         pauseScreen.SetActive(false);
-        //resultScreen.SetActive(false);  
+        resultScreen.SetActive(false);  
     }
 
     public void GameOver()
@@ -129,9 +142,9 @@ public class GameManager : MonoBehaviour
         ChangeState(GameState.GameOver);
     }
 
-    void DiplayResults()
+    void DisplayResults()
     {
-        timeSurvivedDisplay.text = stopwatchDisplay.text;
+        //timeSurvivedDisplay.text = stopwatchDisplay.text;
         resultScreen.SetActive(true);
     }
 
@@ -150,5 +163,16 @@ public class GameManager : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(stopwatchTime / 60), seconds = Mathf.FloorToInt(stopwatchTime % 60);
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}",minutes,seconds);
+    }
+
+    public void AssignChosenCharacterUI(CharacterScriptableObject chosenCharacterData)
+    {
+        chosenCharacterImage.sprite = chosenCharacterData.Icon;
+        chosenCharacterName.text = chosenCharacterData.name;
+    }
+
+    public void AssignLevelReachedUI(int levelReachedData)
+    {
+        levelReachedDisplay.text = levelReachedData.ToString();
     }
 }

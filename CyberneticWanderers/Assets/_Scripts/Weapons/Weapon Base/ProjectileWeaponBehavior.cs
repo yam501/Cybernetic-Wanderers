@@ -24,6 +24,11 @@ public class ProjectileWeaponBehavior : MonoBehaviour
         currentPierce = weaponData.Pierce;
     }
 
+    public float GetCurrentDamage()
+    {
+        return currentDamage *= FindObjectOfType<PlayerStats>().CurrentMight;
+    }
+
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);

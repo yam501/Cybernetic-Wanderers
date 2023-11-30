@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ecc7b87dfb8464480d23160018c1b7, type: 3}
   m_Name: Knife Character
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 7da79dc4e22bd454380d42701da5647d, type: 2}
+  name: Knifer
   startingWeapon: {fileID: 6730264937358778640, guid: 0045f03f89afb6a4d866c7d5515f38eb, type: 3}
   maxHealth: 100
   moveSpeed: 5
