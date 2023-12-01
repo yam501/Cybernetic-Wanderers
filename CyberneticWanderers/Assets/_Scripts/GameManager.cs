@@ -45,8 +45,11 @@ public class GameManager : MonoBehaviour
     float stopwatchTime;
     public TextMeshProUGUI stopwatchDisplay;
 
+    [Header("Other")]
     public bool isGameOver = false;
     public bool choosingUpgrade = false;
+    public GameObject playerObject;
+
 
     private void Awake()
     {
@@ -229,6 +232,7 @@ public class GameManager : MonoBehaviour
     public void StartLevelUp() 
     {
         ChangeState(GameState.LevelUp);
+        playerObject.SendMessage("RemoveAndApplyUpgrades");
     }
 
     public void EndLevelUp()
