@@ -162,9 +162,6 @@ public class PlayerStats : MonoBehaviour
         CurrentMagnet = characterData.Magnet;
         
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnWeapon(secondWeaponTest);
-        SpawnPassiveItem(firstPItest);
-        SpawnPassiveItem(secondPItest);
     }
 
     private void Start()
@@ -247,6 +244,7 @@ public class PlayerStats : MonoBehaviour
         if (!GameManager.instance.isGameOver)
         {
             GameManager.instance.AssignLevelReachedUI(level);
+            GameManager.instance.AssignChosenWeaponsAndPassiveItems(inventory.weaponUISlots, inventory.PassiveItemUISlots);
             GameManager.instance.GameOver();
         }
     }

@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI chosenCharacterName;
     public TextMeshProUGUI levelReachedDisplay;
     public TextMeshProUGUI timeSurvivedDisplay;
-    public List<Image> chosenWeaponUI = new List<Image>(6);
-    public List<Image> chosenPassiveItemUI = new List<Image>(6);
+    public List<Image> chosenWeaponsUI = new List<Image>(6);
+    public List<Image> chosenPassiveItemsUI = new List<Image>(6);
 
     [Header("Stopwatch")]
     public float timeLimit;
@@ -89,8 +89,8 @@ public class GameManager : MonoBehaviour
                 if (!choosingUpgrade)
                 {
                     choosingUpgrade = true;
-                    Time.timeScale = 0f;
-                    levelUpScreen.SetActive(true);
+                    //Time.timeScale = 0f;
+                    //levelUpScreen.SetActive(true);
                 }
                 break;
 
@@ -189,6 +189,43 @@ public class GameManager : MonoBehaviour
         levelReachedDisplay.text = levelReachedData.ToString();
     }
 
+    public void AssignChosenWeaponsAndPassiveItems(List<Image> chosenWeaponsData, List<Image> chosenPassiveItemsData)
+    {
+        if (chosenWeaponsData.Count != chosenWeaponsUI.Count || chosenPassiveItemsData.Count != chosenPassiveItemsUI.Count)
+        {
+            Debug.Log("Different weapons and passives items data lists");
+            return;
+        }
+
+        //For Weapons
+        for (int i = 0; i < chosenWeaponsUI.Count; i++)
+        {
+            if (chosenWeaponsData[i].sprite)
+            {
+                chosenWeaponsUI[i].enabled = true;
+                chosenWeaponsUI[i].sprite = chosenWeaponsData[i].sprite;
+            }
+            else
+            {
+                chosenWeaponsUI[i].enabled = false;
+            }
+        }
+        
+        //For Passives
+        for (int i = 0; i < chosenPassiveItemsUI.Count; i++)
+        {
+            if (chosenPassiveItemsData[i].sprite)
+            {
+                chosenPassiveItemsUI[i].enabled = true;
+                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsData[i].sprite;
+            }
+            else
+            {
+                chosenPassiveItemsUI[i].enabled = false;
+            }
+        }
+    }
+
     public void StartLevelUp() 
     {
         ChangeState(GameState.LevelUp);
@@ -201,4 +238,6 @@ public class GameManager : MonoBehaviour
         levelUpScreen.SetActive(false);
         ChangeState(GameState.Gameplay);
     }
+
+
 }
