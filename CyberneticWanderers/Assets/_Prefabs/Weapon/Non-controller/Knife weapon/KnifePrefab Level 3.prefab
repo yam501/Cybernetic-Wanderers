@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1935622618654743867}
   - component: {fileID: 8044745124832736322}
   m_Layer: 0
-  m_Name: KnifePrefab Level 2
+  m_Name: KnifePrefab Level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7708c7af008e2648b2afbb2a496745a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: d92bcd568f175774cae7fe3bb4e4d994, type: 2}
+  weaponData: {fileID: 11400000, guid: 3a88bbae6717fd54889dc4a38e869024, type: 2}
   destroyAfterSeconds: 3
   spriteAngleOffset: 0
 --- !u!60 &8044745124832736322

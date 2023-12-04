@@ -92,8 +92,8 @@ public class GameManager : MonoBehaviour
                 if (!choosingUpgrade)
                 {
                     choosingUpgrade = true;
-                    //Time.timeScale = 0f;
-                    //levelUpScreen.SetActive(true);
+                    Time.timeScale = 0f;
+                    levelUpScreen.SetActive(true);
                 }
                 break;
 

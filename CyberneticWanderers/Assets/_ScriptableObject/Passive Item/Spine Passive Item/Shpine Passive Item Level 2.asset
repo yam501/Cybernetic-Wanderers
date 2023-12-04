@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e64a6027f9c0594b893c0288a099d75, type: 3}
-  m_Name: Shpine oassive item
+  m_Name: Shpine Passive Item Level 2
   m_EditorClassIdentifier: 
-  multipler: 100
-  level: 1
+  multipler: 150
+  level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Spinach Level 2
+  descriptrion: Increases Might by 150%
   icon: {fileID: 21300000, guid: 23a474b0e09b83545904f9c3ce359749, type: 3}
