@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthProp : Pickup, ICollectible
+public class HealthProp : Pickup
 {
     public int healthToRestore;
-    public void Collect()
+    public override void Collect()
     {
+        if (hasBeenCollected)
+        {
+            return;
+        }
+        else
+        {
+            base.Collect();
+        }
         PlayerStats player = FindObjectOfType<PlayerStats>();
         player.RestoreHealth(healthToRestore);
     }

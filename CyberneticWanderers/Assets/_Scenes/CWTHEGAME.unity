@@ -2760,8 +2760,63 @@ MonoBehaviour:
   maxEnemiesAllowed: 3
   maxEnemiesReached: 0
   waveInterval: 3
+  isWaveActive: 0
   waves:
   - waveName: 'Wave 1 '
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 3
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 5
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 6
+    enemyGroups:
+    - enemyName: Rat
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 3620204721980338216, guid: cb135cdeda25bdc43b64662d36305fea, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: Wave 7
     enemyGroups:
     - enemyName: Rat
       enemyCount: 5
@@ -14255,7 +14310,7 @@ Animator:
   m_GameObject: {fileID: 2007393056}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44477881627dff6428529f15be181f03, type: 2}
+  m_Controller: {fileID: 9100000, guid: 632941f7317c70844a3ef546733d4962, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
