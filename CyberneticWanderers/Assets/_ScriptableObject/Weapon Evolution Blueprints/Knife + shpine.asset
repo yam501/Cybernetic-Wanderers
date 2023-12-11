@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e27f8cd242b64b4a92575560d187cc1, type: 3}
+  m_Name: Knife + shpine
+  m_EditorClassIdentifier: 
+  baseWeaponData: {fileID: 11400000, guid: c2338956a1b79e94bbc35d983f8c7e24, type: 2}
+  evolvedWeaponData: {fileID: 11400000, guid: dd6469f6fa5b2164882f3fafb16aa77c, type: 2}
+  catalystPassiveItemData: {fileID: 11400000, guid: 27345e4a17d41164e9051918860c19ba, type: 2}
+  evolvedWeapon: {fileID: 6730264937358778640, guid: 43c38e44a5fd94a478c8b556555b3135, type: 3}

@@ -153,7 +153,7 @@ public class PlayerStats : MonoBehaviour
     public Image expBar;
     public TextMeshProUGUI levelText;
 
-    public GameObject secondWeaponTest,firstPItest,secondPItest;
+ //   public GameObject secondWeaponTest,firstPItest,secondPItest;
 
 
     private void Awake()
