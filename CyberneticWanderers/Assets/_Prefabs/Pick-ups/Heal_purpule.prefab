@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db13d164e25c6c47b155eabf270b394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasBeenCollected: 0
   healthToRestore: 25
 --- !u!61 &8546885678226678449
 BoxCollider2D:
@@ -172,7 +173,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-7715317454733955913
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e27f8cd242b64b4a92575560d187cc1, type: 3}
   m_Name: Knife + shpine
   m_EditorClassIdentifier: 
-  baseWeaponData: {fileID: 11400000, guid: c2338956a1b79e94bbc35d983f8c7e24, type: 2}
+  baseWeaponData: {fileID: 11400000, guid: 3a88bbae6717fd54889dc4a38e869024, type: 2}
   evolvedWeaponData: {fileID: 11400000, guid: dd6469f6fa5b2164882f3fafb16aa77c, type: 2}
-  catalystPassiveItemData: {fileID: 11400000, guid: 27345e4a17d41164e9051918860c19ba, type: 2}
+  catalystPassiveItemData: {fileID: 11400000, guid: 43e6d177a597d644b8899ee1d0ce5486, type: 2}
   evolvedWeapon: {fileID: 6730264937358778640, guid: 43c38e44a5fd94a478c8b556555b3135, type: 3}
