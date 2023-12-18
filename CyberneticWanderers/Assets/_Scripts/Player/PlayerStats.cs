@@ -291,8 +291,10 @@ public class PlayerStats : MonoBehaviour
             if (CurrentHealth > characterData.MaxHealth)
             {
                 CurrentHealth = characterData.MaxHealth;
+                
             }
         }
+        UpdateHealthBar();
     }
 
     void Recover()

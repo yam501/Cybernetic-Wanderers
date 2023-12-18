@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ecc7b87dfb8464480d23160018c1b7, type: 3}
   m_Name: Garlic Character
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  name: 
+  icon: {fileID: -1156584963, guid: aa961ede9e300314694d5eb62f48cf4c, type: 3}
+  name: CQC Expert
   startingWeapon: {fileID: 5101641909389210541, guid: 2f995edb763f0444eb0189278823da24, type: 3}
   maxHealth: 50
-  moveSpeed: 7
+  moveSpeed: 5
   recovery: 1
   might: 1
   projectileSpeed: 0

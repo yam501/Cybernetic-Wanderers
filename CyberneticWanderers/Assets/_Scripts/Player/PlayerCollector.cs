@@ -19,7 +19,7 @@ public class PlayerCollector : MonoBehaviour
     {
         playerCollector.radius = player.CurrentMagnet;
     }
-    
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.TryGetComponent(out ICollectible collectible))
@@ -27,7 +27,7 @@ public class PlayerCollector : MonoBehaviour
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
             Vector2 foreceDirection = (transform.position - col.transform.position).normalized;
             rb.AddForce(foreceDirection * pullSpead);
-            
+
             collectible.Collect();
         }
     }
